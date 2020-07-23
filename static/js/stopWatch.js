@@ -1,24 +1,44 @@
  function createStopWatch(element){
     // createStopWatch will create a stopwtach display as the child of the given
     // element.
-    function addHtmlToElement(element){
-        heading_el = document.createElement("h1")
-        heading_text = document.createTextNode("Stop Watch")
 
-        element.appendChild(heading_el)
-        heading_el.appendChild(heading_text)
+    
+    element.insertAdjacentHTML("afterbegin",
+        "\
+            <h1>Stop Watch</h1>\
+            <div class=row>\
+                <h2> HH:MM::SS,S</h2>\
+            </div>\
+            <h2 class='watchEl' id='curTimer'> 99:99:99,9 </h2>\
+        "
+        
+    )
 
+    // // h1 stop watch tetxt
+    // heading_el = document.createElement("h1")
+    // heading_text_nd = document.createTextNode("Stop Watch")
+    // heading_el.appendChild(heading_text_nd)
+    // // row element
+    // row_el = document.createElement("div")
+    // row_el.classList.add("row")
 
+    // // h2 Display
+    // format_el = document.createElement("h2")
+    // format_text_nd = document.createTextNode("HH:MM:SS,S")
+    // format_el.appendChild(format_text_nd)
 
-        //     <h1 class="">Stopwatch</h1>
-        // <div class="row">
-        //     <h2>HH:MM:SS,S</h2>
-        // </div>
-        // <h2 class="watchEl"id="curTimer">99:99:99,9</h2>
-    }
+    // //h2 curTimer
+    // curTimer_el = document.createElement("h2")
+    // curTimer_text_nd = document.createTextNode("99:99:99,9")
+    // curTimer_el.appendChild(curTimer_text_nd)
+    // curTimer_el.classList.add("watchEl")
+    // curTimer_el.id = "curTimer"
 
-    addHtmlToElement(element);  
-
+    // // append child elements
+    // element.appendChild(heading_el)
+    // element.appendChild(row_el)
+    // row_el.appendChild(format_el)
+    // element.appendChild(curTimer_el)
 
     //  https://gist.github.com/vankasteelj/74ab7793133f4b257ea3
     function sec2time(timeInSeconds) {
@@ -35,6 +55,7 @@
     }
 
     function updateStoppedTimers (stoppedTimersList, listOfTimers){
+        // add new timer to The List of Timers
 
         // create new list item
         var listItem = document.createElement("li");
@@ -48,7 +69,7 @@
         // list items
         listItems = document.getElementsByClassName("stoppedTimer");
         
-        // if the list is over 5 long 
+        // if the list is over 5 long remove items until it is not.
         while (listItems.length > 5) {
                 listItems[5].remove();
             }
@@ -63,6 +84,7 @@
         running: false
     }
 
+    
     //add event listener to startButton
     document.getElementById("startButton").
         addEventListener("click", function (event){
@@ -72,6 +94,7 @@
         
         })
     
+    // add event listener to stop button
     document.getElementById("stopButton").
         addEventListener("click", function (params) {
         
@@ -82,6 +105,8 @@
         updateStoppedTimers(finishedTimers, timerList)
 
     });
+
+
 
     window.setInterval(() => {
 

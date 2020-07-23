@@ -1,5 +1,5 @@
 body {
-    background-color: coral;
+    background-color: seagreen;
     font-family: Arial, Helvetica, sans-serif;
 
 }
@@ -7,4 +7,12 @@ body {
 .watchEl {
     display: inline;
     color: whitesmoke;
+}
+
+h1 {
+    font-size: 3em;
+}
+li {
+    color: white;
+    font-size: x-large;
 }
