@@ -10,6 +10,22 @@
                 <h2> HH:MM::SS,S</h2>\
             </div>\
             <h2 class='watchEl' id='curTimer'> 99:99:99,9 </h2>\
+            <div class='row'>\
+                <button id='startButton'>Start/Reset</button>\
+                <button id='stopButton'>Stop</button>\
+            </div>\
+            <div class='row' style='padding-top: 20px'>\
+            <table class='center'>\
+                <thead>\
+                    <tr>\
+                        <h2 style='display: inline;''>#</h2>\
+                        <h2 style='display: inline;''>Time</h2>\
+                    </tr>\
+                </thead>\
+                <tbody id='stoppedTimersList'>\
+                </tbody>\
+            </table>\
+        </div>\
         "
         
     )

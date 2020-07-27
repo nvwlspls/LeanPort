@@ -1,0 +1,160 @@
+/* Color Pallet
+
+grey-1:  rgba(219,222,220, 1)
+grey-2: rgba(189,188,183, 1);
+grey-3: rgba(180,180,180, 1);
+dark-grey: rgba(41, 41, 41, 1)
+purple: rgba(33,6,50, 1);
+orange: rgba(253,84,45, 1)
+darker-orange rgba(229, 53, 28, 1)
+black: rgba(0, 0, 0, 1)
+*/
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 0;
+    -webkit-align-content: center;
+    align-content: center;
+   }
+   
+   .grid {
+     max-width: 1000px;
+     display: grid;
+     grid-auto-rows: minmax(600px, auto);
+     margin: auto;
+   }
+   
+   .header  {
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    background-color: black;
+    max-width: 1000px;
+    font-size: 3em;
+    }
+    .header p{
+        font-size: .4em;
+    }
+
+    @media (min-width: 500px){
+    .grid {
+       grid-template-columns: 38% 62%;
+     }
+     
+   }
+   
+   .apple {
+     text-align: center;
+     padding: 20px;
+   /*   background-color: black; */
+   }
+   
+    .apple:nth-child(4n-3) {
+     background-color:black;
+     color: white;
+     
+   } 
+   .apple:nth-child(4n - 2) {
+     background-color:white;
+     color: black;
+   }  
+   .apple:nth-child(4n-1) {
+     background-color:darkgrey;
+   } 
+    .apple:nth-child(4n){
+     background-color:black;
+   }  
+
+   .container {
+     background-color: rgba(236,236,236, 1);
+     padding-top: 6px;
+     margin: auto;
+   }
+   #apple:h2 {
+     color:  #3B085C;
+   }
+   /* .resumeLink {
+      color: white;
+     max-width: 200px;
+     margin: auto;
+     background-color: #3b424c;
+     border-radius: 5px;
+     display: block;
+     outline: 0;
+     border-style: solid;
+     border-width: 1px;
+     padding: 16px;
+     vertical-align: middle;
+     overflow: hidden;
+     text-decoration: none;
+     border-color: black;
+     text-align: center;
+     cursor: pointer;
+     white-space: nowrap;
+     backgroud-color: #1d181f;
+     margin-top: 2px;
+     margin-bottom: 2px;
+   }
+    */
+   
+/*    
+   .resumeLink:hover {
+     background-color: #e61ce6;
+     background-image: -webkit-linear-gradient(
+       to right,
+       rgba(33,6,50, 1),
+       rgba(33,6,50, 1) 18%,
+       rgba(219,222,220, 1) 18%,
+       rgba(219,222,220, 1) 38%,
+       rgba(229, 53, 28, 1) 38%
+
+     ); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+     /* background-image: linear-gradient(
+       to right,
+       rgba(33,6,50, 1),
+       rgba(33,6,50, 1) 18%,
+       rgba(219,222,220, 1) 18%,
+       rgba(219,222,220, 1) 38%,
+       rgba(229, 53, 28, 1) 38%
+     ); /* Chrome 26, Firefox 16+, IE 10+, Opera */
+   /* } */ 
+   
+   
+   .circle {
+     border-radius: 100%;
+     border-style: solid;
+     border-color:#FD6a02;
+     max-width: 100%;
+     height: auto;
+     border-width: .5em;
+   }
+   
+
+
+   #profilePic {
+     max-height:400px;
+   }
+
+   #workSection {
+       text-align: left;
+   }
+   
+   #workSection h2, #workSection .smallLine {
+       text-align: center;
+       
+   }
+   /* Color Pallet
+   
+   grey-1:  rgba(219,222,220, 1)
+   grey-2: rgba(189,188,183, 1);
+   grey-3: rgba(180,180,180, 1)
+   purple: rgba(106,53,251, 1)
+   orange: rgba(253,84,45, 1)
+   black: rgba(0, 0, 0, 1)
+   */
+
+   /* .bottomText {
+       vertical-align: bottom;
+   } */
