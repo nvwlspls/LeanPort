@@ -23,6 +23,7 @@ body {
      display: grid;
      grid-auto-rows: minmax(600px, auto);
      margin: auto;
+
    }
    
    .header  {
@@ -33,8 +34,9 @@ body {
     background-color: black;
     max-width: 1000px;
     font-size: 3em;
-    border-color: white;
+    border-color: #FD6a02;
     border-style: solid;
+    border-radius: 30px;
    
    }
 
@@ -50,8 +52,8 @@ body {
       }
     .header  {
       margin-top: .5em;
-      border-width: .1em;
-      border-radius: .5em;
+      border-width: 4pt;
+      border-radius: 40px;
       }
 
 
@@ -61,7 +63,9 @@ body {
    .apple {
      text-align: center;
      padding: 20px;
-   /*   background-color: black; */
+     border-radius: 30px;
+
+     /*   background-color: black; */
    }
    
     .apple:nth-child(4n-3) {
@@ -141,7 +145,7 @@ body {
      border-color:#FD6a02;
      max-width: 100%;
      height: auto;
-     border-width: .5em;
+     border-width: 4pt;
    }
    
 
