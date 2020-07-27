@@ -3,12 +3,13 @@
         <style>
 
         </style>
-        <link rel="stylesheet" href="static/css/grid.css"> 
-        <link rel="stylesheet" href="static/css/index.css"> 
+        <!-- <link rel="stylesheet" href="static/css/grid.css">  -->
+        <!-- <link rel="stylesheet" href="static/css/index.css">     -->
+        <link rel="stylesheet" href="static/css/port.css">
 
     </head>
     <body>
-        <div class="container center">
+        <!-- <div class="container center">
             <div class="row">
                 <h1 class='center'>Hello Everyone.</h1>
             </div>
@@ -21,16 +22,68 @@
                 <table class="center">
                     <thead>
                         <tr>
-                            <h2 style="display: inline;">#    </h2>
-                            <h2 style="display: inline;">Time</h2>
+                            <h2 style='display: inline;''>#    </h2>
+                            <h2 style='display: inline;''>Time</h2>
                         </tr>
                     </thead>
-                    <tbody id="stoppedTimersList">
+                    <tbody id='stoppedTimersList'>
                     </tbody>
 
                 </table>
             </div>
-        </div>
+        </div> -->
+
+        <div class="container">
+            <h2 class="header" >Wayne Jessen             <p>Software Developer</p></h2>
+
+            <div class="grid">
+                <div class="apple" id="myWork"> 
+                  <h2>Links:</h2>  
+                  <p>Coming soon.</p>
+                </div>
+                <div class="apple" id="car">      
+                  <h2>About Me</h2>
+                  <img class="circle" id="profilePic" src="https://github.com/nvwlspls/static/blob/master/img/profileimage.jpg?raw=true" />
+                  <p>
+                   I am Wayne and this is my homepage.  I am a software developer with extensive expierence with Django, 
+                   python, R, Postgresql and  linux.  I learn by doing and I always have more projects that I want to do and 
+                   languages to learn.
+                  </p>
+                </div>
+                <div class="apple" id="stopWatch">
+                    <h3 class="">A vanialla javascript Stopwatcach that keeps the five most recent times. </h3></div>
+                <div class="apple " id="workSection">
+                    <h2>About My Work:</h2>
+                    <p class="smallLine">I work to develop validated applications for clinical trials.</p>
+                        <h3>Primary Tools:</h3>    
+                        <ul >
+                            <li>  Python + Django for web applications</li>
+                            <li>  R for data transormation</li>
+                            <li>  Postgresql for storage</li>
+                            <li>  Javascript on the client side</li>
+                        </ul>
+                        <h4>Apples</h4>
+                        <h3>Projects:</h3>
+                        <ul>
+                            <li> <h3>Study Randomization:</h3></li>
+                                <ul>
+                                <p>Designed, Developed and Deployed a django applicaiton that randomizes patients in clinical trials.</p>
+                                <p style="font-weight: bolder;"> Tools Utilized:</p>
+                                <p>Python, Djagno, Postgresql, RabbitMQ, Celery, JQuery, javascript,Twitter Bootstrap</p>
+
+                                </ul> 
+                            <li><h3>Data Viewer</h3></li>
+                                <ul>
+                                    <p>Developed and deployed a django application to intergrate several disparate data sources and display to clinical trial personel with varying access levels on a per object basis</p>
+                                    <p style="font-weight: bolder;">Tools Utilized:</p>
+                                    <p>Python, Django, R, Postgresql, JQuery, javascript, Twitter Bootstrap</p>    
+                                </ul>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </container>
+
         <script src="static/js/stopWatch.js"></script>
         <script>
             createStopWatch(document.getElementById("stopWatch"));
