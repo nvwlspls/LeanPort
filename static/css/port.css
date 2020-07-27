@@ -33,7 +33,11 @@ body {
     background-color: black;
     max-width: 1000px;
     font-size: 3em;
-    }
+    border-color: white;
+    border-style: solid;
+   
+   }
+
     .header p{
         font-size: .4em;
     }
@@ -41,7 +45,16 @@ body {
     @media (min-width: 500px){
     .grid {
        grid-template-columns: 38% 62%;
-     }
+       padding-bottom: 5em;
+
+      }
+    .header  {
+      margin-top: .5em;
+      border-width: .1em;
+      border-radius: .5em;
+      }
+
+
      
    }
    
