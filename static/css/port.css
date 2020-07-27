@@ -64,6 +64,9 @@ body {
      text-align: center;
      padding: 20px;
      border-radius: 30px;
+     border-color: #FD6a02;
+    border-style: solid;
+    border-width: 4pt;
 
      /*   background-color: black; */
    }
