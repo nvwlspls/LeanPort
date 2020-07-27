@@ -10,35 +10,12 @@
                 <h2> HH:MM::SS,S</h2>\
             </div>\
             <h2 class='watchEl' id='curTimer'> 99:99:99,9 </h2>\
+            <div class='row'>\
+            <button id='startButton'>Start/Reset</button>\
+            <button id='stopButton'>Stop</button>\
+            </div>\
         "
-        
     )
-
-    // // h1 stop watch tetxt
-    // heading_el = document.createElement("h1")
-    // heading_text_nd = document.createTextNode("Stop Watch")
-    // heading_el.appendChild(heading_text_nd)
-    // // row element
-    // row_el = document.createElement("div")
-    // row_el.classList.add("row")
-
-    // // h2 Display
-    // format_el = document.createElement("h2")
-    // format_text_nd = document.createTextNode("HH:MM:SS,S")
-    // format_el.appendChild(format_text_nd)
-
-    // //h2 curTimer
-    // curTimer_el = document.createElement("h2")
-    // curTimer_text_nd = document.createTextNode("99:99:99,9")
-    // curTimer_el.appendChild(curTimer_text_nd)
-    // curTimer_el.classList.add("watchEl")
-    // curTimer_el.id = "curTimer"
-
-    // // append child elements
-    // element.appendChild(heading_el)
-    // element.appendChild(row_el)
-    // row_el.appendChild(format_el)
-    // element.appendChild(curTimer_el)
 
     //  https://gist.github.com/vankasteelj/74ab7793133f4b257ea3
     function sec2time(timeInSeconds) {
