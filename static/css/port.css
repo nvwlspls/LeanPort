@@ -11,11 +11,12 @@ black: rgba(0, 0, 0, 1)
 */
 
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    /* color: white; */
     margin: 0;
     -webkit-align-content: center;
     align-content: center;
+    background-color: lightgray;
    }
    
    .grid {
@@ -24,6 +25,8 @@ body {
      grid-auto-rows: minmax(600px, auto);
      margin: auto;
 
+     /* background-clip: padding-box; */
+     /* background-color: white; */
    }
    
    .header  {
@@ -31,11 +34,11 @@ body {
     padding-bottom: 20px;
     padding-top: 20px;
     text-align: center;
-    background-color: black;
+    /* background-color: black; */
     max-width: 1000px;
     font-size: 3em;
-    border-color: #FD6a02;
-    border-style: solid;
+    /* border-color: #FD6a02; */
+    /* border-style: solid; */
     border-radius: 30px;
    
    }
@@ -52,7 +55,7 @@ body {
       }
     .header  {
       margin-top: .5em;
-      border-width: 4pt;
+      border-width: 2pt;
       border-radius: 40px;
       }
 
@@ -64,37 +67,38 @@ body {
      text-align: center;
      padding: 20px;
      border-radius: 30px;
-     border-color: #FD6a02;
+     /* border-color: #FD6a02; */
     border-style: solid;
     border-width: 4pt;
+    background-color: white;
 
      /*   background-color: black; */
    }
    
-    .apple:nth-child(4n-3) {
-     background-color:black;
-     color: white;
+    /* .apple:nth-child(4n-3) { */
+     /* background-color:black; */
+     /* color: white; */
      
-   } 
-   .apple:nth-child(4n - 2) {
-     background-color:white;
-     color: black;
-   }  
-   .apple:nth-child(4n-1) {
-     background-color:darkgrey;
-   } 
-    .apple:nth-child(4n){
-     background-color:black;
-   }  
-
+   /* }  */
+   /* .apple:nth-child(4n - 2) { */
+     /* background-color:white; */
+     /* color: black; */
+   /* }   */
+   /* .apple:nth-child(4n-1) { */
+     /* background-color:darkgrey; */
+   /* }  */
+    /* .apple:nth-child(4n){ */
+     /* background-color:black; */
+   /* }   */
+/* 
    .container {
      background-color: rgba(236,236,236, 1);
      padding-top: 6px;
      margin: auto;
    }
-   #apple:h2 {
-     color:  #3B085C;
-   }
+   #apple:h2 { */
+     /* color:  #3B085C; */
+   /* } */
    /* .resumeLink {
       color: white;
      max-width: 200px;
@@ -144,11 +148,11 @@ body {
    
    .circle {
      border-radius: 100%;
-     border-style: solid;
-     border-color:#FD6a02;
+     /* border-style: solid; */
+     /* border-color:#FD6a02; */
      max-width: 100%;
      height: auto;
-     border-width: 4pt;
+     /* border-width: 4pt; */
    }
    
 
@@ -165,6 +169,14 @@ body {
        text-align: center;
        
    }
+
+   #stopWatch li {
+     text-align: center;
+    }
+
+    #stopWatch table {
+      align: center;
+    }
    /* Color Pallet
    
    grey-1:  rgba(219,222,220, 1)

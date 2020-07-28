@@ -2,7 +2,7 @@
     // createStopWatch will create a stopwtach display as the child of the given
     // element.
 
-    
+    // TODO: Allight list items with center. 
     element.insertAdjacentHTML("afterbegin",
         "\
             <h1>Stop Watch</h1>\
