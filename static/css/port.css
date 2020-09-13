@@ -19,9 +19,9 @@ body {
     background-color: lightgray;
 }
 
-li {
-  font-family: 'Courier New', Courier, monospace;
-}
+/* li { */
+  /* font-family: 'Courier New', Courier, monospace; */
+/* } */
 
 .grid {
   max-width: 1000px;
@@ -32,15 +32,13 @@ li {
 
 
 .header  {
-margin: auto;
+
+ margin: auto;
 padding-bottom: 20px;
 padding-top: 20px;
 text-align: center;
-/* background-color: black; */
 max-width: 1000px;
 font-size: 3em;
-/* border-color: #FD6a02; */
-/* border-style: solid; */
 border-radius: 30px;
 
 }
@@ -61,28 +59,21 @@ border-radius: 30px;
   border-radius: 40px;
   }
 
-
-  
 }
 
 .apple {
   text-align: center;
   padding: 20px;
   border-radius: 30px;
-border-style: solid;
-border-width: 4pt;
-background-color: white;
-
-  /*   background-color: black; */
+  border-style: solid;  
+  border-width: 4pt;
+  background-color: white;
 }
 
 .circle {
   border-radius: 100%;
-  /* border-style: solid; */
-  /* border-color:#FD6a02; */
   max-width: 100%;
   height: auto;
-  /* border-width: 4pt; */
 }
 
 #profilePic {
@@ -116,17 +107,13 @@ background-color: white;
 .blog-post {
   max-width: 1000px;
   align-content: center;
-  /* border-style: solid; */
   border-width: 6px;
   margin: auto;
-  margin-top: 5%;
+
   } 
  
 .blog-title { 
   border-width: 3px;
-  /* border-color: black; */
-  /* border-style: solid; */
-  /* border-radius: 15px; */
   max-height: 100px;
   max-width: 300px;
   padding-bottom: 15px;
@@ -134,16 +121,20 @@ background-color: white;
   margin: auto;
 
 }
-/* .empty-div {
-  max-height: 10px;
-  border-style: solid;
+
+/* @media (min-width: 400px){
+  .blog-post {
+    background-color: red;
+  }
 } */
+
 .blog-body {
-  border-width: 6   qpx;
+  border-width: 4px;
   min-width: 100%;
   border-style: solid;
   border-radius: 10px;
   padding: 10px;
+  /* max-width: 1000px; */
 }
 
 /* Color Pallet
